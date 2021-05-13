@@ -12644,6 +12644,10 @@ form input::placeholder {
     margin-bottom: 20px;
 }
 
+.form-form__title-m {
+    padding-top: 30px;
+}
+
 .btn {
     width: 335px;
     height: 99px;
@@ -12813,4 +12817,7 @@ form input::placeholder {
 
 .map {
     background: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    padding-top: 95px;
+    padding-bottom: 580px;
 }
