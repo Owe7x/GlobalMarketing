@@ -1,0 +1,30 @@
+.forecast {
+    background: #fff;
+    padding-top: 85px;
+    padding-bottom: 70px;
+    &-block {
+        max-width: 100%;
+        background: #d3d3d3;
+        border-radius: 8px;
+        padding: 50px 50px 0 0;
+        display: flex;
+        position: relative;
+        &__img {
+            padding-top: 50px;
+            img {
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 515px;
+            height: 562px;
+            background: url(../images/forecat-bg.png);
+            top: -15px;
+            left: -257px;
+        }
+    }
+}

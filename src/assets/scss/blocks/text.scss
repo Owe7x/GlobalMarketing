@@ -1,0 +1,41 @@
+.yellow {
+    color: #dacc32;
+}
+.blue {
+    color: #27529a;
+}
+.white {
+    color: #fff;
+}
+.blue-line {
+    &::after {
+        display: block;
+        content: '';
+        max-width: 700px;
+        background: #27529a;
+        height: 3px;
+    }
+}
+.title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 77px;
+    text-align: center;
+    margin-bottom: 52px;
+    color: black;
+    &--800 {
+        max-width: 800px;
+        margin: 0 auto 60px;
+    }
+}
+.p {
+    color: black;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: justify;
+    margin-bottom: 35px;
+    li {
+        list-style: none;
+    }
+}
