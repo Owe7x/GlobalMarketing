@@ -1,0 +1,32 @@
+.tender {
+    background: #27529a;
+    padding: 70px 0;
+    &-block {
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px 35px;
+        &__p {
+            font-size: 19px;
+            line-height: 32px;
+            color: black;
+            margin-bottom: 45px;
+        }
+        &__title {
+            text-align: center;
+            font-size: 25px;
+            line-height: 40px;
+            color: black;
+        }
+        &__img {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        &__btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+    }
+}

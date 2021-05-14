@@ -1,0 +1,51 @@
+.tools {
+    background: url(../images/tools-bg.jpg);
+    padding: 75px 0 0px;
+    position: relative;
+    z-index: 2;
+    &::before {
+        display: block;
+        content: '';
+        background: url(../images/operate-bg.png);
+        position: absolute;
+        bottom: -500px;
+        left: 0;
+        width: 838px;
+        height: 1091px;
+        z-index: -1;
+    }
+    &-block {
+        background: #fff;
+        max-width: 349px;
+        height: 460px;
+        border-radius: 10px;
+        padding: 23px 0 15px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+        &__img {
+            margin-top: auto;
+            max-width: 100%;
+            img {
+                width: 100%;
+                height: 150px;
+            }
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+            color: #27529a;
+            font-weight: bold;
+            padding-left: 25px;
+            margin-bottom: 30px;
+        }
+        &__p {
+            font-size: 19px;
+            line-height: 29px;
+            font-weight: 300;
+            padding-left: 25px;
+            padding-right: 15px;
+            color: black;
+        }
+    }
+}

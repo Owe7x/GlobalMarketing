@@ -31,4 +31,15 @@
     &-unsual {
         justify-content: center;
     }
+    &-operate {
+        justify-content: center;
+        background: #ba0000;
+        img {
+            margin-top: 0;
+            margin-left: 8px;
+        }
+    }
+    &-block {
+        justify-content: center;
+    }
 }

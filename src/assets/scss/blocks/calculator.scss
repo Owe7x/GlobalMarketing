@@ -1,0 +1,56 @@
+.calculator {
+    padding: 90px 0;
+    &-block {
+        background: #27529a;
+        border-radius: 10px;
+        padding: 35px 25px;
+    }
+}
+.polzunok-block {
+    margin-bottom: 70px;
+}
+.polzunok__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.polzunok__value {
+    font-size: 20px;
+}
+.polzunok-2 {
+    margin-top: -20px;
+}
+.resualt {
+    display: flex;
+    align-items: center;
+    &-block {
+        width: 372px;
+        background: #fff;
+        height: 80px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        &-right {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        color: #ba0000;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    &__result {
+        font-size: 25px;
+        line-height: 30px;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+}

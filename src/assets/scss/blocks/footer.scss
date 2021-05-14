@@ -1,0 +1,19 @@
+.footer {
+    background: #c3c3c3;
+    padding: 55px 0;
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 35px;
+        color: black;
+    }
+    &-politic {
+        text-align: right;
+    }
+}
