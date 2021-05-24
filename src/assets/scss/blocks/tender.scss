@@ -1,10 +1,16 @@
 .tender {
     background: #27529a;
     padding: 70px 0;
+    @include breakpoint($bp-600) {
+        padding: 35px 0;
+    }
     &-block {
         background: #fff;
         border-radius: 10px;
         padding: 30px 35px;
+        @include breakpoint($bp-500) {
+            padding: 30px 10px;
+        }
         &__p {
             font-size: 19px;
             line-height: 32px;
@@ -27,6 +33,25 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 35px;
+            @include breakpoint($bp-600) {
+                justify-content: center;
+            }
+        }
+    }
+    &-btn__img {
+        @include breakpoint($bp-1000) {
+            max-width: 200px;
+        }
+        @include breakpoint($bp-800) {
+            max-width: 120px;
+        }
+        img {
+            @include breakpoint($bp-1000) {
+                max-width: 100%;
+            }
+        }
+        @include breakpoint($bp-600) {
+            display: none;
         }
     }
 }

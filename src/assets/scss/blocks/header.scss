@@ -1,8 +1,14 @@
 .header {
     background: url(../images/bg-1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     position: relative;
     padding-bottom: 157px;
+    @include breakpoint($bp-1100) {
+        padding-bottom: 0px;
+        background-position: top left;
+    }
     &-top {
         padding-top: 15px;
         display: flex;
@@ -12,6 +18,10 @@
             font-size: 20px;
             color: #dacc32;
             line-height: 40px;
+            @include breakpoint($bp-600) {
+                font-size: 18px;
+                line-height: 25px;
+            }
         }
         &__phone {
             a {
@@ -19,7 +29,16 @@
                 font-size: 20px;
                 line-height: 40px;
                 text-decoration: none;
+                @include breakpoint($bp-600) {
+                    font-size: 18px;
+                    line-height: 35px;
+                }
             }
+        }
+        @include breakpoint($bp-500) {
+            padding-top: 8px;
+            padding-bottom: 45px;
+            flex-direction: column;
         }
     }
     &-middle {
@@ -31,6 +50,19 @@
         line-height: 85px;
         text-align: center;
         text-transform: uppercase;
+        @include breakpoint($bp-1000) {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include breakpoint($bp-500) {
+            font-size: 30px;
+            line-height: 40px;
+            margin-top: 50px;
+        }
     }
     &-table {
         background: #fff;
@@ -42,10 +74,19 @@
         max-width: 743px;
         margin: 0 auto 20px;
         padding: 10px 0;
+        @include breakpoint($bp-1000) {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
     &-icon {
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
         margin-bottom: 55px;
         &__item {
             display: flex;
@@ -54,9 +95,27 @@
             font-size: 17px;
             line-height: 23px;
             max-width: 260px;
+            @include breakpoint($bp-1000) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            @include breakpoint($bp-767) {
+                margin: 0 auto;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        @include breakpoint($bp-1100) {
+            margin-bottom: 40px;
         }
     }
     &-form {
+        @include breakpoint($bp-1100) {
+            padding: 10px 10px;
+            background-color: #d7ca2e;
+        }
         &__title {
             font-weight: bold;
             font-size: 32px;
@@ -65,11 +124,50 @@
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 30px;
+            @include breakpoint($bp-1100) {
+                margin-bottom: 20px;
+            }
+            @include breakpoint($bp-1000) {
+                font-size: 28px;
+                line-height: 35px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            @include breakpoint($bp-500) {
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
         &__p {
             margin-top: 20px;
             font-size: 15px;
             color: rgba($color: #000000, $alpha: 0.25);
+            @include breakpoint($bp-600) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            @include breakpoint($bp-500) {
+                font-size: 12px;
+                line-height: 18px;
+            }
         }
     }
+}
+.header-center {
+    margin: 0 auto;
+}
+
+#politic-conf {
+    color: black;
+    padding: 25px;
+    p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+.h3__title {
+    font-size: 19px;
+    font-weight: bold;
 }

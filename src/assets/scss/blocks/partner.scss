@@ -3,7 +3,9 @@
     padding-top: 80px;
     padding-bottom: 625px;
     position: relative;
-    
+    @include breakpoint($bp-600) {
+        padding-top: 40px;
+    }
     &::before {
         display: block;
         content: '';
@@ -15,6 +17,15 @@
         width: 748px;
         height: 1064px;
         z-index: 2;
+        @include breakpoint($bp-1600) {
+            left: -50px;
+        }
+        @include breakpoint($bp-1400) {
+            left: -120px;
+        }
+        @include breakpoint($bp-1200) {
+            display: none;
+        }
     }
     &-blocks {
         background: #e8e8e8;
@@ -28,6 +39,13 @@
             color: black;
             font-weight: 500;
             margin-bottom: 40px;
+            @include breakpoint($bp-600) {
+                font-size: 17px;
+                line-height: 26px;
+            }
+        }
+        @include breakpoint($bp-600) {
+            padding: 25px 20px;
         }
     }
     &-block {
@@ -41,6 +59,10 @@
             color: black;
             text-align: center;
             margin-top: 20px;
+            @include breakpoint($bp-600) {
+                font-size: 20px;
+                line-height: 25px;
+            }
         }
         &__p {
             font-size: 19px;
@@ -51,6 +73,10 @@
             margin-top: 20px;
             &-blue {
                 color: #27529a;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 15px;
+                line-height: 20px;
             }
         }
     }

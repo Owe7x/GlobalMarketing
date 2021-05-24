@@ -7,16 +7,15 @@ $('.single-slide').slick({
     dots: false,
 });
 function sliderHandler(price) {
-    // calculate
+     //calculate
     if (price === undefined) {
       price = srvPrices;
     }
  
-    var persents = price.totalS1 * price.totalS2 * 120000 * 0.05;
-    var result = Math.round(price.totalS1 * price.totalS2 * 120000 - persents);
-    // document.getElementById("s1").innerHTML = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
-    // document.querySelector(".polzunok__value").innerHTML = price.totalS1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") ;
-    // document.querySelector(".polzunok__value-one").innerHTML = price.totalS2;
+    var persents = (price.totalS1 * 11300) + (price.totalS2 * 1000) + (price.totalS3 * 25000) + (price.totalS4 * 10000);
+    var profit = persents * 0.3;
+     document.getElementById("s1").innerHTML = persents.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
+     document.getElementById("s2").innerHTML = profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
   }
  
   var srvPrices = {}
@@ -25,9 +24,9 @@ function sliderHandler(price) {
  
  
   $(".range1").ionRangeSlider({
-    from: 25,
+    from: 3,
     grid: false,
-    values: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+    values: [0,10,20,30,40,50],
     onChange: function (data) {
       srvPrices.totalS1 = data.from_value;
       sliderHandler(srvPrices)
@@ -37,4 +36,42 @@ function sliderHandler(price) {
       sliderHandler(srvPrices)
     }
  });  
- 
+ $(".range2").ionRangeSlider({
+  from: 2,
+  grid: false,
+  values: [0,50,100,150,250,350],
+  onChange: function (data) {
+    srvPrices.totalS2 = data.from_value;
+    sliderHandler(srvPrices)
+  },
+  onStart: function(data) {
+    srvPrices.totalS2 = data.from_value;
+    sliderHandler(srvPrices)
+  }
+});
+$(".range3").ionRangeSlider({
+  from: 5,
+  grid: false,
+  values: [0,5,10,20,30,40],
+  onChange: function (data) {
+    srvPrices.totalS3 = data.from_value;
+    sliderHandler(srvPrices)
+  },
+  onStart: function(data) {
+    srvPrices.totalS3 = data.from_value;
+    sliderHandler(srvPrices)
+  }
+});
+$(".range4").ionRangeSlider({
+  from: 10,
+  grid: false,
+  values: [0,10,20,30,40,50],
+  onChange: function (data) {
+    srvPrices.totalS4 = data.from_value;
+    sliderHandler(srvPrices)
+  },
+  onStart: function(data) {
+    srvPrices.totalS4 = data.from_value;
+    sliderHandler(srvPrices)
+  }
+});

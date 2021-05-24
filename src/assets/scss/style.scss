@@ -1,14 +1,16 @@
 @import "vars";
 @import "vendor/reset";
 @import 'bootstrap/scss/bootstrap';
+@import "mixins";
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #fff;
-
+    overflow-x: hidden;
     font-family: 'Bahnschrift';
     font-size: 1.4rem;
     line-height: 1.5;
@@ -20,7 +22,9 @@ body {
 *:after {
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 
 /* Blocks */
 @import "blocks/header.scss";
@@ -47,3 +51,4 @@ body {
 @import "blocks/slick.scss";
 @import "blocks/slick-theme.scss";
 @import "blocks/ion.rangeSlider.scss";
+@import "blocks/thanks.scss";

@@ -1,7 +1,12 @@
 .operate {
     background: url(../images/operate-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 90px;
     position: relative;
+    @include breakpoint($bp-600) {
+        padding-top: 40px;
+    }
     &::before {
         display: block;
         content: '';
@@ -13,9 +18,23 @@
         width: 527px;
         height: 643px;
         z-index: 2;
+        @include breakpoint($bp-1600) {
+            left: -130px;
+        }
+        @include breakpoint($bp-1400) {
+            left: -200px;
+        }
+        @include breakpoint($bp-1200) {
+            display: none;
+        }
     }
     &-blocks {
         padding-left: 260px;
+        position: relative;
+        z-index: 3;
+        @include breakpoint($bp-1200) {
+            padding-left: 0;
+        }
     }
     &-block {
         padding-left: 15px;
@@ -27,12 +46,29 @@
             margin-bottom: 20px;
             color: #27529a;
             font-weight: bold;
+            @include breakpoint($bp-1000) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
         }
         &__p {
             font-size: 18px;
             line-height: 25px;
             color: black;
             font-weight: 300;
+            @include breakpoint($bp-1000) {
+                font-size: 17px;
+                line-height: 23px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
     &-info {
@@ -44,6 +80,25 @@
         padding-bottom: 55px;
         &__text {
             max-width: 440px;
+            @include breakpoint($bp-1000) {
+                max-width: 65%;
+            }
+            @include breakpoint($bp-800) {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 23px;
+            line-height: 30px;
+            align-items: center;
+        }
+        @include breakpoint($bp-800) {
+            flex-direction: column;
         }
     }
 }

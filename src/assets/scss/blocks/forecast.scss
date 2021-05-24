@@ -2,6 +2,10 @@
     background: #fff;
     padding-top: 85px;
     padding-bottom: 70px;
+    @include breakpoint($bp-600) {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
     &-block {
         max-width: 100%;
         background: #d3d3d3;
@@ -9,11 +13,23 @@
         padding: 50px 50px 0 0;
         display: flex;
         position: relative;
+        @include breakpoint($bp-1000) {
+            padding: 50px 50px 0 50px;
+        }
+        @include breakpoint($bp-600) {
+            padding: 35px 35px 0 35px;
+        }
+        @include breakpoint($bp-400) {
+            padding: 30px 10px 0 10px;
+        }
         &__img {
             padding-top: 50px;
             img {
                 position: relative;
                 z-index: 2;
+            }
+            @include breakpoint($bp-1000) {
+                display: none;
             }
         }
         &::after {
@@ -25,6 +41,9 @@
             background: url(../images/forecat-bg.png);
             top: -15px;
             left: -257px;
+            @include breakpoint($bp-1000) {
+                display: none;
+            }
         }
     }
 }

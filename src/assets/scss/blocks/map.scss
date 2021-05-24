@@ -1,6 +1,15 @@
 .map {
     background: url(../images/map.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     padding-top: 95px;
     padding-bottom: 580px;
+    @include breakpoint($bp-1000) {
+        padding-bottom: 450px;
+    }
+    @include breakpoint($bp-600) {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
 }

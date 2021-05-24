@@ -66,5 +66,4 @@ validateForms('#form5', { email: {required: true, email: true}, tel: {required: 
 validateForms('#form6', { email: {required: true, email: true}, tel: {required: true}, name: {required: true}  });
 validateForms('#form7', { email: {required: true, email: true}, tel: {required: true}, name: {required: true}  });
 validateForms('#form8', { email: {required: true, email: true}, tel: {required: true}, name: {required: true}  });
-validateForms('#form9', { email: {required: true, email: true}, tel: {required: true}, name: {required: true}  });
 

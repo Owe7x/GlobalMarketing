@@ -1,12 +1,19 @@
 .form-fr {
     padding-top: 100px;
     padding-bottom: 50px;
+    @include breakpoint($bp-600) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     &-block {
         border-radius: 10px;
         border: 3px solid #e9e9e9;
         padding: 35px 0;
         max-width: 521px;
         margin: 0 auto;
+        @include breakpoint($bp-1000) {
+            margin: 0 auto 30px;
+        }
         &__title {
             background: #27529a;
             font-size: 35px;
@@ -16,6 +23,10 @@
             font-weight: bold;
             margin-bottom: 60px;
             text-transform: uppercase;
+            @include breakpoint($bp-600) {
+                font-size: 25px;
+                line-height: 50px;
+            }
         }
         &__item {
             color: black;
@@ -31,6 +42,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include breakpoint($bp-600) {
+            padding: 0 10px;
+        }
     }
     &-bg {
         background: black!important;

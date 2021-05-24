@@ -2,11 +2,23 @@
     background: #27529a;
     padding-top: 85px;
     padding-bottom: 70px;
+    @include breakpoint($bp-600) {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
     &-block {
         background: url(../images/monitoring-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
         padding: 55px 0 30px 55px;
         border-radius: 4px;
         position: relative;
+        @include breakpoint($bp-1100) {
+            padding: 55px 55px 30px 55px;
+        }
+        @include breakpoint($bp-800) {
+            padding: 35px 35px 20px 35px;
+        }
         &::after {
             display: block;
             content: '';
@@ -16,9 +28,15 @@
             height: 536px;
             right: 30px;
             top: -35px;
+            @include breakpoint($bp-1100) {
+                display: none;
+            }
         }
         &__text {
             max-width: 611px;
+            @include breakpoint($bp-1100) {
+                max-width: 100%;
+            }
         }
     }
 }

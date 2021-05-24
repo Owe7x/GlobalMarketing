@@ -2,6 +2,80 @@
 layout: default
 title: gulp | Home
 ---
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top__logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <div class="header-top__text">
+                спутниковый мониторинг
+            </div>
+            <div class="header-top__phone">
+                <a href="tel:+88000000000">8 800 000 00 00</a>
+            </div>
+        </div>
+        <div class="header-middle">
+            <span class="yellow">бизнес на реализации</span> тахографов и услуг спутникового мониторинга <span class="yellow">по франшизе</span>
+        </div>
+        <div class="header-table">
+            Откройте новый офис «Глобал Мониторинг» в своём городе 
+            и выйдите на плановые показатели от 10 до 12 месяцев
+        </div>
+        <div class="header-icon">
+            <div class="row header-center">
+                <div class="col-sm-6 col-md-4">
+                    <div class="header-icon__item">
+                        <img src="assets/images/icon-1.png" alt="">
+                        Работа в трёх сегментах: 
+                        b2b, b2g, b2c
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="header-icon__item">
+                        <img src="assets/images/icon-2.png" alt="">
+                        Рекомендации по участию в тендерах
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="header-icon__item">
+                        <img src="assets/images/icon-3.png" alt="">
+                        От 5% до 10% скидка от оптовых цен
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-form">
+            <div class="header-form__title">
+                Получите подробную информацию о франшизе
+            </div>
+            <form action="mail.php" method="post" id="form1">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
+                <input type="hidden" name="form_subject" value="Первая Форма">
+                <div class="form__link">
+                    <label for="name"></label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="form__link">
+                    <label for="tel"></label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+                </div>
+                <div class="form__link">
+                    <label for="email"></label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="Ваш E-mail">
+                </div>
+                <button type="submit" value="Submit" class="btn">
+                    Получить материалы
+                    <img src="assets/images/btn-bg.png" alt="">
+                </button>        
+            </form>
+            <div class="header-form__p">
+                Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+            </div>
+        </div>
+    </div>
+</header>
 
 <div class="forecast">
     <div class="container">
@@ -45,7 +119,7 @@ title: gulp | Home
         <div class="monitoring-block">
             <div class="monitoring-block__text">
                 <div class="p">
-                    Компания «Глобал мониторинг» работает в сфере спутников систем для отслеживания транспорта уже более 14 лет. За это время собрана база поставщиков, а 73% заказов поступает от постоянных клиентов. Отлаженная бизнес-модель готова к передаче на правах франшизного продукта.
+                    Компания «Глобал Мониторинг» работает в сфере спутников систем для отслеживания транспорта уже более 14 лет. За это время собрана база поставщиков, а 73% заказов поступает от постоянных клиентов. Отлаженная бизнес-модель готова к передаче на правах франшизного продукта.
                 </div>
                 <div class="p">
                     «С 2007 года мы оснастили более 10 000 машин для более чем 500 клиентов. Проанализировав финансовые показатели темпа роста компании за последние 3 года, мы решили, что готовы расширяться за пределами Оренбурга и области. Цель работы с партнёрами из других регионов — создание всероссийской сети и узнаваемого бренда с высоким уровнем лояльности».
@@ -53,7 +127,7 @@ title: gulp | Home
             </div>
             <div class="p">
                 <span class="blue blue-line">
-                    Основатель и руководитель компании «Глобал мониторинг»
+                    Основатель и руководитель компании «Глобал Мониторинг»
                 </span>
             </div>
         </div>
@@ -63,14 +137,13 @@ title: gulp | Home
     <div class="form-form__title">
         СВЯЗАТЬСЯ НАПРЯМУЮ С ВЛАДЕЛЬЦЕМ КОМПАНИИ
     </div>
-    <form action="mail.php" method="post" id="form1">
+    <form action="mail.php" method="post" id="form2">
         <!-- Hidden Required Fields -->
-        <input type="hidden" name="admin_email[]" value="test@mail.ru">
+        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
         <input type="hidden" name="form_subject" value="Первая Форма">
         <div class="form__link">
             <label for="name"></label>
             <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
-            <label for="fname" class="error"></label>
         </div>
         <div class="form__link">
             <label for="tel"></label>
@@ -84,6 +157,9 @@ title: gulp | Home
             Связаться <br> с владельцем
         </button>        
     </form>
+    <div class="header-form__p">
+        Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+    </div>
 </div>
 <div class="product">
     <div class="container">
@@ -94,7 +170,7 @@ title: gulp | Home
             С НАЦЕНКОЙ ОТ 13% ДО 33%
         </div>
         <div class="row">
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                 <div class="product-block">
                     <div class="product-block__img">
                         <img src="assets/images/product-1.png" alt="">
@@ -112,7 +188,7 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                 <div class="product-block">
                     <div class="product-block__img">
                         <img src="assets/images/product-2.png" alt="">
@@ -131,7 +207,7 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                 <div class="product-block">
                     <div class="product-block__img">
                         <img src="assets/images/product-3.png" alt="">
@@ -150,9 +226,9 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-none">
             </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                 <div class="product-block">
                     <div class="product-block__img">
                         <img src="assets/images/product-4.png" alt="">
@@ -169,7 +245,7 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                 <div class="product-block">
                     <div class="product-block__img">
                         <img src="assets/images/product-5.png" alt="">
@@ -207,14 +283,13 @@ title: gulp | Home
     <div class="form-form__title form-form__title-m">
         проверьте свободен ли ваш город для франшизы
     </div>
-    <form action="mail.php" method="post" id="form1">
+    <form action="mail.php" method="post" id="form3">
         <!-- Hidden Required Fields -->
-        <input type="hidden" name="admin_email[]" value="test@mail.ru">
-        <input type="hidden" name="form_subject" value="Первая Форма">
+        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+        <input type="hidden" name="form_subject" value="Вторая Форма">
         <div class="form__link">
             <label for="name"></label>
             <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
-            <label for="fname" class="error"></label>
         </div>
         <div class="form__link">
             <label for="tel"></label>
@@ -228,6 +303,9 @@ title: gulp | Home
             Проверить <br> город
         </button>        
     </form>
+    <div class="header-form__p">
+        Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+    </div>
 </div>
 <div class="profit">
     <div class="container">
@@ -284,6 +362,14 @@ title: gulp | Home
                     <div class="polzunok-2">
                         <input type="text" class="range1" name="range1" value="" />
                     </div>
+                    <div class="polzunok-text-value">
+                        <li class="polzunok-li">0</li>
+                        <li class="polzunok-li">10</li>
+                        <li class="polzunok-li">20</li>
+                        <li class="polzunok-li">30</li>
+                        <li class="polzunok-li">40</li>
+                        <li class="polzunok-li">50</li>
+                    </div>
                 </div>
                 <div class="polzunok-block">
                     <div class="polzunok__text">
@@ -291,7 +377,15 @@ title: gulp | Home
                         <div class="polzunok__value"> <span class="yellow">Средний чек</span> 1000 руб.</div>
                     </div>
                     <div class="polzunok-2">
-                        <input type="text" class="range1" name="range1" value="" />
+                        <input type="text" class="range2" name="range2" value="" />
+                    </div>
+                    <div class="polzunok-text-value">
+                        <li class="polzunok-li">0</li>
+                        <li class="polzunok-li">50</li>
+                        <li class="polzunok-li">100</li>
+                        <li class="polzunok-li">150</li>
+                        <li class="polzunok-li">250</li>
+                        <li class="polzunok-li">350</li>
                     </div>
                 </div>
                 <div class="polzunok-block">
@@ -300,7 +394,15 @@ title: gulp | Home
                         <div class="polzunok__value"> <span class="yellow">Средний чек</span> 25000 руб.</div>
                     </div>
                     <div class="polzunok-2">
-                        <input type="text" class="range1" name="range1" value="" />
+                        <input type="text" class="range3" name="range3" value="" />
+                    </div>
+                    <div class="polzunok-text-value">
+                        <li class="polzunok-li">0</li>
+                        <li class="polzunok-li">5</li>
+                        <li class="polzunok-li">10</li>
+                        <li class="polzunok-li">20</li>
+                        <li class="polzunok-li">30</li>
+                        <li class="polzunok-li">40</li>
                     </div>
                 </div>
                 <div class="polzunok-block">
@@ -309,7 +411,15 @@ title: gulp | Home
                         <div class="polzunok__value"> <span class="yellow">Средний чек</span> 10000 руб.</div>
                     </div>
                     <div class="polzunok-2">
-                        <input type="text" class="range1" name="range1" value="" />
+                        <input type="text" class="range4" name="range4" value="" />
+                    </div>
+                    <div class="polzunok-text-value">
+                        <li class="polzunok-li">0</li>
+                        <li class="polzunok-li">10</li>
+                        <li class="polzunok-li">20</li>
+                        <li class="polzunok-li">30</li>
+                        <li class="polzunok-li">40</li>
+                        <li class="polzunok-li">50</li>
                     </div>
                 </div>
                 <div class="resualt">
@@ -320,7 +430,7 @@ title: gulp | Home
                         </div>
                     </div>
                     <div class="resualt-btn">
-                        <button class="btn btn-block">Зафиксировать <br> прибыль</button>
+                        <a data-fancybox href="#profit"><button class="btn btn-block">Зафиксировать <br> прибыль</button></a>
                     </div>
                     <div class="resualt-block resualt-block-right">
                         <div class="resualt__title">Чистая прибыль</div>
@@ -345,7 +455,7 @@ title: gulp | Home
         </div>
         <div class="tools-blocks">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="tools-block">
                         <div class="tools-block__title">
                             Скидки <br> на оборудование
@@ -358,7 +468,7 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="tools-block">
                         <div class="tools-block__title">
                             Готовая CRM система
@@ -370,7 +480,7 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="tools-block">
                         <div class="tools-block__title">
                             Поиск и обучение персонала
@@ -383,7 +493,7 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="tools-block">
                         <div class="tools-block__title">
                             Обучение продукту
@@ -396,9 +506,9 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                 </div>
             </div>
         </div>
@@ -467,7 +577,7 @@ title: gulp | Home
                     С ГОТОВЫМИ ТЕХНИКАМИ ПРОДАЖ
                 </div>
                 <div class="operate-info__btn">
-                    <button class="btn btn-operate">Запустить бизнес <img src="assets/images/operate-btn.png" alt=""></button>
+                    <a data-fancybox href="#biznes"><button class="btn btn-operate">Запустить бизнес <img src="assets/images/operate-btn.png" alt=""></button></a>
                 </div>
             </div>
         </div>
@@ -485,7 +595,7 @@ title: gulp | Home
         </div>
         <div class="tender-block">
             <div class="tender-block__p">
-                Участие в госзакупках и тендерах крупных частных компаний открывает большие перспективы в увеличении выручки вашего бизнеса. Глобал Мониторинг имеет экспертизу и многолетний опыт с этим каналом привлечения клиентов. Вы сможете подавать правильно подготовленные заявки и выигрывать тендеры на сотни тысяч рублей ежемесячно.
+                Участие в госзакупках и тендерах крупных частных компаний открывает большие перспективы в увеличении выручки вашего бизнеса. «Глобал Мониторинг» имеет экспертизу и многолетний опыт с этим каналом привлечения клиентов. Вы сможете подавать правильно подготовленные заявки и выигрывать тендеры на сотни тысяч рублей ежемесячно.
             </div>
             <div class="tender-block__title">
                <span class="red">ПОСМОТРИТЕ</span>  КАКИЕ <span class="red">ТЕНДЕРЫ</span> ДОСТУПНЫ В ВАШЕМ РЕГИОНЕ ПРЯМО СЕЙЧАС
@@ -497,7 +607,7 @@ title: gulp | Home
                 <div class="tender-btn__img">
                     <img src="assets/images/tender-img-2.png" alt="">
                 </div>
-                <button class="btn btn-block">Посмотреть <br> доступные тендеры</button>
+                <a href="https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=%D0%B3%D0%BB%D0%BE%D0%BD%D0%B0%D1%81%D1%81&morphology=on&search-filter=%D0%94%D0%B0%D1%82%D0%B5+%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F&pageNumber=1&sortDirection=false&recordsPerPage=_10&showLotsInfoHidden=false&sortBy=UPDATE_DATE&fz44=on&fz223=on&af=on&ca=on&pc=on&pa=on&priceFromGeneral=400000&currencyIdGeneral=-1"><button class="btn btn-block">Посмотреть <br> доступные тендеры</button></a>
                 <div class="tender-btn__img">
                     <img src="assets/images/tender-img-2.png" alt="">
                 </div>
@@ -518,17 +628,17 @@ title: gulp | Home
         </div>
         <div class="client-blocks">
             <div class="row">
-                <div class="col-xl-3">
-                    <div class="client-block">
+                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                    <div class="client-block client-block-140">
                         <div class="client-block__img">
-                            <img src="assets/images/cient-img-1.png" alt="">
+                            <img src="assets/images/client-img-1.png" alt="">
                         </div>
                         <div class="client-block__p">
                             На 100% прекращается нецелевое использование ТС предприятия
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <div class="client-block client-block-130">
                         <div class="client-block__img">
                             <img src="assets/images/client-img-2.png" alt="">
@@ -538,7 +648,7 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <div class="client-block client-block-120">
                         <div class="client-block__img">
                             <img src="assets/images/client-img-3.png" alt="">
@@ -548,7 +658,7 @@ title: gulp | Home
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <div class="client-block">
                         <div class="client-block__img">
                             <img src="assets/images/client-img-4.png" alt="">
@@ -589,29 +699,29 @@ title: gulp | Home
 <div class="container">
     <div class="partner-blocks">
         <div class="partner-blocks__title">
-            С франшизой «Глобал мониторинг» вы будете предлагать продукты и услуги, используя уже опробованные в течение 14 лет техники продаж. Выверенная и точная бизнес-модель позволит быстро адаптироваться:
+            С франшизой «Глобал Мониторинг» вы будете предлагать продукты и услуги, используя уже опробованные в течение 14 лет техники продаж. Выверенная и точная бизнес-модель позволит быстро адаптироваться:
         </div>
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="partner-block">
                     <div class="partner-block__img">
                         <img src="assets/images/car-1.png" alt="">
                     </div>
                     <div class="partner-block__title">
-                        Начинающим бизнесменам.
+                        Начинающим бизнесменам
                     </div>
                     <div class="partner-block__p">
                         Квалифицированное обучение и подбор команды головной компанией поможет стартовать с минимальными навыками.
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="partner-block">
                     <div class="partner-block__img">
                         <img src="assets/images/car-2.png" alt="">
                     </div>
                     <div class="partner-block__title">
-                        Предпринимателям с большим опытом.
+                        Предпринимателям с большим опытом
                     </div>
                     <div class="partner-block__p">
                         Вы сможете открыть новое направление 
@@ -620,13 +730,13 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="partner-block">
                     <div class="partner-block__img">
                         <img src="assets/images/car-3.png" alt="">
                     </div>
                     <div class="partner-block__title">
-                        Инвесторам.
+                        Инвесторам
                     </div>
                     <div class="partner-block__p">
                         Вы войдёте в бизнес с высокой долей автоматизации, которая позволит 
@@ -635,7 +745,7 @@ title: gulp | Home
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="partner-block">
                     <div class="partner-block__img">
                         <img src="assets/images/car-4.png" alt="">
@@ -685,7 +795,7 @@ title: gulp | Home
             </span>
         </div>
         <div class="cooperation__p">
-            Работа с брендом «Глобал мониторинг» — это возможность использовать опыт компании в своих интересах, чтобы получить:
+            Работа с брендом «Глобал Мониторинг» — это возможность использовать опыт компании в своих интересах, чтобы получить:
         </div>
         <div class="cooperation-block">
             <li class="cooperation-li"><img src="assets/images/cooperation-li.png" alt="">Стабильную ежемесячную прибыль.</li>
@@ -707,7 +817,7 @@ title: gulp | Home
         </div>
         <div class="form-fr-blocks">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-lg-6 col-xl-6">
                     <div class="form-fr-block">
                         <div class="form-fr-block__title">
                             НОВЫЙ ПРОДУКТ
@@ -734,12 +844,12 @@ title: gulp | Home
                                 <span class="blue">от 123 000 рублей.</span>
                             </div>
                             <div class="form-fr-block-btn">
-                                <button class="btn btn-block">УЗНАТЬ ПОДРОБНЕЕ</button>
+                                <a data-fancybox href="#product"><button class="btn btn-block">УЗНАТЬ ПОДРОБНЕЕ</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-lg-6 col-xl-6">
                     <div class="form-fr-block">
                         <div class="form-fr-block__title form-fr-bg">
                             НОВЫЙ бизнес
@@ -766,7 +876,7 @@ title: gulp | Home
                                 <span class="blue">от 123 000 рублей.</span>
                             </div>
                             <div class="form-fr-block-btn">
-                                <button class="btn btn-block">УЗНАТЬ ПОДРОБНЕЕ</button>
+                                <a data-fancybox href="#product"><button class="btn btn-block">УЗНАТЬ ПОДРОБНЕЕ</button></a>
                             </div>
                         </div>
                     </div>
@@ -788,28 +898,44 @@ title: gulp | Home
         </div>
         <div class="single-slide">
             <div class="slider-block">
-                <div class="slider-block__title">
-                    Иван Дмитриев. Томск
-                </div>
-                <div class="slider-block__p">
-                    Благодарим ООО "Глобал Мониторинг" за добросовестную работу. Это не простоустановка тахографов, это действительно полноценный сервис автотранспортных предприятий. Здесь действительно разбираются в системах ГЛОНАСС и программных решениях для GPS мониторинга.
-                </div>
+                <a href="assets/images/otz-1.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-1.jpg" />
+                </a>
             </div>
             <div class="slider-block">
-                <div class="slider-block__title">
-                    Иван Дмитриев. Томск
-                </div>
-                <div class="slider-block__p">
-                    Благодарим ООО "Глобал Мониторинг" за добросовестную работу. Это не простоустановка тахографов, это действительно полноценный сервис автотранспортных предприятий. Здесь действительно разбираются в системах ГЛОНАСС и программных решениях для GPS мониторинга.
-                </div>
+                <a href="assets/images/otz-2.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-2.jpg" />
+                </a>
             </div>
             <div class="slider-block">
-                <div class="slider-block__title">
-                    Иван Дмитриев. Томск
-                </div>
-                <div class="slider-block__p">
-                    Благодарим ООО "Глобал Мониторинг" за добросовестную работу. Это не простоустановка тахографов, это действительно полноценный сервис автотранспортных предприятий. Здесь действительно разбираются в системах ГЛОНАСС и программных решениях для GPS мониторинга.
-                </div>
+                <a href="assets/images/otz-3.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-3.jpg" />
+                </a>
+            </div>
+            <div class="slider-block">
+                <a href="assets/images/otz-4.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-4.jpg" />
+                </a>
+            </div>
+            <div class="slider-block">
+                <a href="assets/images/otz-5.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-5.jpg" />
+                </a>
+            </div>
+            <div class="slider-block">
+                <a href="assets/images/otz-6.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-6.jpg" />
+                </a>
+            </div>
+            <div class="slider-block">
+                <a href="assets/images/otz-7.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-7.jpg" />
+                </a>
+            </div>
+            <div class="slider-block">
+                <a href="assets/images/otz-8.jpg" data-fancybox="images" >
+                    <img src="assets/images/otz-8.jpg" />
+                </a>
             </div>
         </div>
     </div>
@@ -819,14 +945,13 @@ title: gulp | Home
             <br>
 ОТКРОЙТЕ ТОЧКУ ПРОДАЖ И ОБСЛУЖИВАНИЯ СИСТЕМ МОНИТОРИНГА
         </div>
-        <form action="mail.php" method="post" id="form1">
+        <form action="mail.php" method="post" id="form4">
             <!-- Hidden Required Fields -->
-            <input type="hidden" name="admin_email[]" value="test@mail.ru">
-            <input type="hidden" name="form_subject" value="Первая Форма">
+            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+            <input type="hidden" name="form_subject" value="Третья Форма">
             <div class="form__link">
                 <label for="name"></label>
                 <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
-                <label for="fname" class="error"></label>
             </div>
             <div class="form__link">
                 <label for="tel"></label>
@@ -840,5 +965,220 @@ title: gulp | Home
                 узнать подробнее
             </button>        
         </form>
+        <div class="header-form__p">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+        </div>
     </div>
 </div>
+<div style="display: none; width: 500px;" id="profit">
+    <div class="form-modal">
+        <div class="form-title__modal">
+            Зафиксировать прибыль
+        </div>
+        <form action="mail.php" method="post" id="form5" class="form-form__modal">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="admin_email[]" value="test@mail.ru">
+            <input type="hidden" name="form_subject" value="Четвертая Форма">
+            <div class="form__link">
+                <label for="name"></label>
+                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__link">
+                <label for="tel"></label>
+                <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+            </div>
+            <div class="form__link">
+                <label for="email"></label>
+                <input type="email" data-validate-field="email" name="email" placeholder="Ваш E-mail">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-modal">
+                Зафиксировать прибыль
+            </button>        
+        </form>
+        <div class="header-form__p">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+        </div>
+    </div>
+</div>
+<div style="display: none; width: 500px;" id="biznes">
+    <div class="form-modal">
+        <div class="form-title__modal">
+            Запустить бизнес
+        </div>
+        <form action="mail.php" method="post" id="form6" class="form-form__modal">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+            <input type="hidden" name="form_subject" value="Пятая Форма">
+            <div class="form__link">
+                <label for="name"></label>
+                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__link">
+                <label for="tel"></label>
+                <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+            </div>
+            <div class="form__link">
+                <label for="email"></label>
+                <input type="email" data-validate-field="email" name="email" placeholder="Ваш E-mail">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-modal">
+                Запустить бизнес
+            </button>        
+        </form>
+        <div class="header-form__p">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+        </div>
+    </div>
+</div>
+<div style="display: none; width: 500px;" id="tender">
+    <div class="form-modal">
+        <div class="form-title__modal">
+            посмотреть доступные тендеры
+        </div>
+        <form action="mail.php" method="post" id="form7" class="form-form__modal">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+            <input type="hidden" name="form_subject" value="Шестая Форма">
+            <div class="form__link">
+                <label for="name"></label>
+                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__link">
+                <label for="tel"></label>
+                <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+            </div>
+            <div class="form__link">
+                <label for="email"></label>
+                <input type="email" data-validate-field="email" name="email" placeholder="Ваш E-mail">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-modal">
+                посмотреть <br> доступные тендеры
+            </button>        
+        </form>
+        <div class="header-form__p">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+        </div>
+    </div>
+</div>
+<div style="display: none; width: 500px;" id="product">
+    <div class="form-modal">
+        <div class="form-title__modal">
+            узнать подробнее
+        </div>
+        <form action="mail.php" method="post" id="form8" class="form-form__modal">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+            <input type="hidden" name="form_subject" value="Седьмая Форма">
+            <div class="form__link">
+                <label for="name"></label>
+                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__link">
+                <label for="tel"></label>
+                <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+            </div>
+            <div class="form__link">
+                <label for="email"></label>
+                <input type="email" data-validate-field="email" name="email" placeholder="Ваш E-mail">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-modal">
+                узнать подробнее
+            </button>        
+        </form>
+        <div class="header-form__p">
+            Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a data-fancybox href="#politic-conf" style="text-decoration: underline;">политикой конфиденциальности</a> .
+        </div>
+    </div>
+</div>
+<div style="display: none; max-width: 600px;" id="politic-conf">
+    <span class="h3__title">Политика конфиденциальности</span>
+    <p>1. Общие положения</p>
+    <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных.</p>
+
+    <ul>
+        <li>1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+        <li>2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта компании «Глобал Маркетинг».</li>
+    </ul>
+
+    <p>2. Основные понятия, используемые в Политике</p>
+
+    <ul>
+        <li>1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</li>
+        <li>2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</li>
+        <li>3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу</li>
+        <li>4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</li>
+        <li>5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</li>
+        <li>6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
+        <li>7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</li>
+        <li>8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта;</li>
+        <li>9. Пользователь – любой посетитель веб-сайта;</li>
+        <li>10. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
+        <li>11. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</li>
+        <li>12. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</li>
+        <li>13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</li>
+    </ul>
+
+    <p>3. Оператор может обрабатывать следующие персональные данные Пользователя</p>
+
+    <ul>
+        <li>1. Фамилия, имя, отчество;</li>
+        <li>2. Номер телефона;</li>
+        <li>3. Адрес электронной почты;</li>
+        <li>4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
+        <li>5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
+    </ul>
+
+    <p>4. Цели обработки персональных данных</p>
+
+    <ul>
+        <li>1. Цель обработки персональных данных Пользователя — заключение, исполнение и прекращение гражданско-правовых договоров; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте; уточнение деталей обращения.</li>
+        <li>2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты с доменом <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98edfef9e8eaf7f3f9ecf9edecf7d8e1f9f6fcfde0b6eaed">[email&#160;protected]</a> с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</li>
+        <li>3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</li>
+    </ul>
+
+    <p>5. Правовые основания обработки персональных данных</p>
+
+    <ul>
+        <li>1. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</li>
+        <li>2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</li>
+    </ul>
+
+    <p>6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</p>
+
+    <p>Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+
+    <ul>
+        <li>1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</li>
+        <li>2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</li>
+        <li>3. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора с пометкой «Отзыв согласия на обработку персональных данных».</li>
+    </ul>
+
+    <p>7. Трансграничная передача персональных данных</p>
+
+    <ul>
+        <li>1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</li>
+        <li>2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</li>
+    </ul>
+
+    <p>8. Заключительные положения</p>
+
+    <ul>
+        <li>1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору по телефону, указанному на сайте.</li>
+        <li>2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</li>
+        <li>3. Актуальная версия Политики в свободном доступе расположена в сети Интернет на сайте.</li>
+    </ul>
+</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(78440977, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/78440977" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->

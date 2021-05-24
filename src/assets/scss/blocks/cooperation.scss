@@ -2,6 +2,9 @@
     background: #27529a;
     padding: 80px 0;
     position: relative;
+    @include breakpoint($bp-600) {
+        padding: 40px 0;
+    }
     &::after {
         display: block;
         content: '';
@@ -11,12 +14,28 @@
         height: 884px;
         bottom: 0;
         right: 0;
+        @include breakpoint($bp-1600) {
+            width: 900px;
+        }
+        @include breakpoint($bp-1400) {
+            width: 800px;
+        }
+        @include breakpoint($bp-1200) {
+            width: 700px;
+        }
+        @include breakpoint($bp-1000) {
+            display: none;
+        }
     }
     &__p {
         font-size: 23px;
         line-height: 32px;
         color: white;
         margin-bottom: 85px;
+        @include breakpoint($bp-600) {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
     &-li {
         list-style: none;
@@ -27,6 +46,15 @@
         padding-bottom: 5px;
         img {
             margin-right: 10px;
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 17px;
+            line-height: 40px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 15px;
         }
     }
 }

@@ -2,27 +2,42 @@
     background: #fff;
     padding-bottom: 90px;
     position: relative;
-    
+    @include breakpoint($bp-1100) {
+        padding-top: 30px;
+    }
+    @include breakpoint($bp-800) {
+        padding-bottom: 40px;
+    }
     &::after {
         display: block;
         content: '';
         background: url(../images/product-bg.png);
+        background-size: cover;
         width: 1370px;
         height: 868px;
         bottom: 0;
         left: 0;
         position: absolute;
         z-index: 0;
+        @include breakpoint($bp-1400) {
+            max-width: 1199px;
+        }
+        @include breakpoint($bp-1200) {
+            display: none;
+        }
     }
     &-block {
         background: #27529a;
         border-radius: 10px;
         max-width: 349px;
         height: 495px;
-        padding: 30px 30px 50px;
+        padding: 30px 25px 50px;
         margin-bottom: 45px;
         position: relative;
         z-index: 1;
+        @include breakpoint($bp-1000) {
+            margin: 0 auto 45px;
+        }
         &__img {
             display: flex;
             justify-content: center;
@@ -34,6 +49,11 @@
             color: #dacc32;
             margin-top: 35px;
             margin-bottom: 40px;
+            @include breakpoint($bp-1000) {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 20px;
+            }
         }
         &__p {
             color: #fff;
@@ -42,6 +62,11 @@
             line-height: 27px;
             max-width: 292px;
             margin-bottom: 30px;
+            @include breakpoint($bp-1000) {
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
         }
         &__price {
             max-width: 245px;
@@ -49,6 +74,16 @@
             font-size: 19px;
             line-height: 27px;
             color: #dacc32;
+            @include breakpoint($bp-1000) {
+                font-size: 18px;
+                line-height: 25px;
+            }
         }
+    }
+}
+
+.col-none {
+    @include breakpoint($bp-1000) {
+        display: none;;
     }
 }

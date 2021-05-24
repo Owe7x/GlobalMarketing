@@ -1,9 +1,13 @@
 .profit {
     background: #27529a;
-    margin-top: -140px;
+    margin-top: -182px;
     padding-top: 240px;
     padding-bottom: 90px;
     position: relative;
+    @include breakpoint($bp-600) {
+        padding-top: 170px;
+        padding-bottom: 90px;
+    }
     &::after {
         display: block;
         content: '';
@@ -14,6 +18,17 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        @include breakpoint($bp-1600) {
+            width: 1000px;
+            
+        }
+        @include breakpoint($bp-1400) {
+            width: 900px;
+            right: 0px;
+        }
+        @include breakpoint($bp-1100) {
+            display: none;
+        }
     }
     &-table {
         padding: 30px 20px;
@@ -23,6 +38,10 @@
         margin-bottom: 80px;
         background: #fff;
         border-radius: 10px;
+        @include breakpoint($bp-1000) {
+            font-size: 17px;
+            line-height: 28px;
+        }
     }
     &-info {
         max-width: 590px;

@@ -2,6 +2,9 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint($bp-1100) {
+        flex-direction: column;
+    }
     input {
         width: 243px;
         height: 67px;
@@ -16,6 +19,13 @@ form {
         &::placeholder {
             font-weight: 300;
             color: #a5a5a5;
+        }
+        @include breakpoint($bp-1100) {
+            margin-bottom: 15px; 
+            width: 335px;
+        }
+        @include breakpoint($bp-400) {
+            width: 260px;
         }
     }
 }
@@ -39,8 +49,49 @@ form {
         &-m {
             padding-top: 30px;
         }
+        @include breakpoint($bp-1000) {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include breakpoint($bp-500) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    @include breakpoint($bp-1200) {
+        padding: 10px 10px 30px ;
     }
 }
 .form-0 {
     margin: 0 auto;
+}
+.form-form__modal {
+    display: flex;
+    flex-direction: column;
+}
+.form-modal {
+    max-width: 500px;
+    background: #d7ca2e;
+    padding: 30px 20px;
+}
+.fancybox-content {
+    padding: 0;
+}
+.form-form__modal {
+    input {
+        width: 290px;
+        margin-bottom: 10px;
+    }
+}
+.form-title__modal {
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
