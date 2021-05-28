@@ -12,6 +12,16 @@
     display: flex;
     align-items: center;
     box-shadow: 0px 7px 13px 0px rgba(50, 50, 50, 0.55);
+    &:hover, :focus {
+        background: #ca1111;
+        box-shadow: 0px 17px 23px 0px rgba(82, 82, 82, 0.55);
+
+    }
+    &:active {
+        background: #e70c0c;
+        box-shadow: 0px 5px 5px 0px rgba(82, 82, 82, 0.55);
+
+    }
     @include breakpoint($bp-1100) {
         height: 110px;
     }

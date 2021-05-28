@@ -8199,6 +8199,12 @@ form {
   display: flex;
   align-items: center;
   box-shadow: 0px 7px 13px 0px rgba(50, 50, 50, 0.55); }
+  .btn:hover, .btn :focus {
+    background: #ca1111;
+    box-shadow: 0px 17px 23px 0px rgba(82, 82, 82, 0.55); }
+  .btn:active {
+    background: #e70c0c;
+    box-shadow: 0px 5px 5px 0px rgba(82, 82, 82, 0.55); }
   @media screen and (max-width: 1100px) {
     .btn {
       height: 110px; } }
@@ -8378,7 +8384,7 @@ form {
     background: #27529a;
     border-radius: 10px;
     max-width: 349px;
-    height: 495px;
+    height: 600px;
     padding: 30px 25px 50px;
     margin-bottom: 45px;
     position: relative;
@@ -8434,10 +8440,7 @@ form {
   background-size: cover;
   background-position: center center;
   padding-top: 95px;
-  padding-bottom: 580px; }
-  @media screen and (max-width: 1000px) {
-    .map {
-      padding-bottom: 450px; } }
+  padding-bottom: 180px; }
   @media screen and (max-width: 600px) {
     .map {
       padding-top: 35px;
