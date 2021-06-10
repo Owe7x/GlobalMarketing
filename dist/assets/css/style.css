@@ -13220,10 +13220,12 @@ form input::placeholder {
 .monitoring-block {
     background: url(../images/monitoring-img.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     padding: 55px 0 30px 55px;
     border-radius: 4px;
     position: relative;
+    max-width: 752px;
+    box-shadow: 19px 32.909px 87.2px 21.8px rgba(25, 26, 28, 0.32);
 }
 
 @media screen and (max-width: 1100px) {
@@ -13242,10 +13244,10 @@ form input::placeholder {
     display: block;
     content: '';
     position: absolute;
-    background: url(../images/monitoring-img-bg.png);
-    width: 381px;
-    height: 536px;
-    right: 30px;
+    background: url(../images/author.png);
+    width: 373px;
+    height: 549px;
+    right: -373px;
     top: -35px;
 }
 

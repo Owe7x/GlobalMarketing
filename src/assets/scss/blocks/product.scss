@@ -1,5 +1,6 @@
 .product {
     background: #fff;
+    padding-top: 90px;
     padding-bottom: 90px;
     position: relative;
     @include breakpoint($bp-1100) {

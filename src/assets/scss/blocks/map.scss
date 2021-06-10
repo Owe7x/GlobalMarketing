@@ -2,9 +2,9 @@
     background: url(../images/map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    padding-top: 95px;
-    padding-bottom: 180px;
+    background-position: center top;
+    padding-top: 75px;
+    padding-bottom: 300px;
     @include breakpoint($bp-600) {
         padding-top: 35px;
         padding-bottom: 70px;
