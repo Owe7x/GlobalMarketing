@@ -13269,6 +13269,7 @@ form input::placeholder {
 
 .product {
     background: #fff;
+    padding-top: 90px;
     padding-bottom: 90px;
     position: relative;
 }
@@ -13393,9 +13394,9 @@ form input::placeholder {
     background: url(../images/map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    padding-top: 95px;
-    padding-bottom: 180px;
+    background-position: center top;
+    padding-top: 75px;
+    padding-bottom: 300px;
 }
 
 @media screen and (max-width: 600px) {

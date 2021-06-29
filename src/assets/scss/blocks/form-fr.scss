@@ -11,6 +11,8 @@
         padding: 35px 0;
         max-width: 521px;
         margin: 0 auto;
+        height: 792px;
+        position: relative;
         @include breakpoint($bp-1000) {
             margin: 0 auto 30px;
         }
@@ -35,7 +37,8 @@
             text-align: center;
         }
         &-btn {
-            margin-top: 30px;
+            position: absolute;
+            bottom: 30px;
         }
     }
     &-column {
